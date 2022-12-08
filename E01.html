@@ -1,0 +1,34 @@
+<script>
+    //PROBLEMA
+    /*
+    Considere que uma loja utiliza o identificador P para transações à vista e F para transações financiadas.
+    Faça um programa que pergunte ao usuário quantas vendas foram realiadas. Separe as vendas em duas listas, sendo uma para as realizadas a vista e outra para as vendas que foram financiadas.
+    Apresente, ao fim do programa, o Total de Vendas à Vista, o Total de Vendas Parceladas e o Somatório de todas as Vendas Realizadas.
+    */
+    
+    //ENTRADA
+
+const totalDEvenda = parseInt(prompt("fale a quantidade de vendas"));
+let vista = 0;
+let financiado = 0;
+
+
+    //PROCESSAMENTO
+
+for (contador = 1; contador <= totalDEvenda; contador++){
+    let letra = prompt("infrme se as trancacoes sao a P-vista | F-financiada").toUpperCase();
+    if (letra === "P") {
+        vista++
+    }
+    else if (letra === "F"){
+        financiado++
+    }
+}
+
+    //SAÍDA
+    
+    document.write(`total a vista foi ${vista}<br>`);
+    document.write(`total financiado foi ${financiado}<br>`);
+    document.write(`o total de venda foi  foi ${totalDEvenda}`);
+
+</script>

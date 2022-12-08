@@ -1,0 +1,32 @@
+<script>
+    //PROBLEMA
+    /*
+    Considere os seguintes preços, cotados para o Kg do Feijão
+    let precosFeijao = [5.3, 4.32, 3.29, 7.99, 6.78, 7.19, 4.22];
+    Apresente o preço mais caro do Kg do feijão e o preço mais barato.
+    Apresenta também o preço médio do feijão.
+    */
+
+
+    //ENTRADA
+    
+    let precosFeijao = [5.3, 4.32, 3.29, 7.99, 6.78, 7.19, 4.22];
+
+    //PROCESSAMENTO
+
+let feijao = 0;
+for (let calculo of precosFeijao) {
+feijao = feijao + calculo
+}
+
+const medio = feijao / precosFeijao.length;
+const maior = precosFeijao.sort((a, b) => b - a)[0];
+const menor = precosFeijao.sort((a, b) => a - b)[0];
+
+    //SAÍDA
+
+document.write(`o maior preco e ${maior.toFixed(2)}<br>`);
+document.write(`o menor preco e ${menor.toFixed(2)}<br>` );
+document.write(`o preco medio e ${medio.toFixed(2)}`);
+
+</script>

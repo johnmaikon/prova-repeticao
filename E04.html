@@ -1,0 +1,23 @@
+<script>
+    //PROBLEMA
+    /*
+    Desenvolva um programa que peça para o usuário informar 10 números entre 1 e 100. Após, identifique quantos desses números são menores do que 50.
+    Apresente a percentagem e a quantidade de números que são abaixo de 50 e a percentagem e quantidade de números que são maiores ou igual a 50.
+    */
+
+    //ENTRADA
+    let maior = []
+    let menor = []
+
+    //PROCESSAMENTO
+    for (let contador = 1; contador <= 10; contador++) {
+        let numeros = parseInt(prompt(`informe um numero ${contador}`));
+        if (numero < 50) menor.push(numeros)
+        else maior.push(numeros);
+    }
+
+    //SAÍDA
+    let percentualmenor = menor.length / 10 * 100;
+    document.write(`existe ${menor.length} numeros (${percentualmenor}%) </br>`);
+    document.write(`existe ${maior.length}numero ${(maior.length / 10 * 100)}`);
+</script>
